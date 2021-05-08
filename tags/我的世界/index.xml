@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>我的世界 on Libvulcan</title>
+    <link>https://blog.libvulcan.com/tags/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C/</link>
+    <description>Recent content in 我的世界 on Libvulcan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 05 May 2021 15:33:47 +0800</lastBuildDate><atom:link href="https://blog.libvulcan.com/tags/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>小题大做 - Minecraft Forge模组依赖关系分析</title>
+      <link>https://blog.libvulcan.com/posts/%E7%BA%AF%E6%8A%98%E8%85%BE-minecraft-forge%E6%A8%A1%E7%BB%84%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB%E5%88%86%E6%9E%90/</link>
+      <pubDate>Wed, 05 May 2021 15:33:47 +0800</pubDate>
+      
+      <guid>https://blog.libvulcan.com/posts/%E7%BA%AF%E6%8A%98%E8%85%BE-minecraft-forge%E6%A8%A1%E7%BB%84%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB%E5%88%86%E6%9E%90/</guid>
+      <description>1. 起因：震惊！朋友亲手整合的Minecraft Java版整合包由于Mod数量太多，新手玩家居然完全Hold不住&amp;hellip;   朋友自己组了一个MC整合包，足足有310个模组，模组加载器初始化后340个，基本涵盖了MC比较好玩和经典的模组。经过测试，整合包能够正常地在windows和macOS上跑起来，我们前期打算边玩边测试，有问题再慢慢调。
+   玩MC肯定要联机，我们偷懒地直接通过内网穿透的方式进行远程联机，玩了几天后发现还是有些不方便，这种联机意味着作为服务器的一方要随时开着游戏才能保证另一方想玩的时候就玩，但是我们不想改变现状，耗费了约几秒钟提出了以下补偿方案：
+   主机方7✖️24小时开着自己电脑 其他玩家需要玩的时候主机方随时响应 使用类似坚果云的同步工具同步存档 &amp;hellip;      经过研究，上述方案几乎全部拉垮
+（废案）1. 主机方7✖️24小时开着自己电脑
+注：7x24小时挖矿它不香吗？
+（废案）2. 其他玩家需要玩的时候主机方随时响应
+注：技术可以实现（远程触发WOL + 开机自启服务之类的操作），人工也可以实现（接到微信消息打开游戏），当事人不愿意体验下班oncall遂放弃。
+（废案）3. 使用类似坚果云的同步工具同步存档
+注：表面上看，方案可行，但暗藏个人存档数据覆盖本地存档的诸多问题，比如同步存档后你登录后可能是其他主机的角色，需要进一步研究server.dat文件，实际操作层面是在挖更多坑。
+  2. 稍微操作一下：直接将整合包迁移到Minecraft Forge Server不香吗？ 利用现有资源快速部署   整合包在本地大概需要至少4～6G左右内存，之前搞的一个4U8G云服务器跑一个Minecraft问题应该不大。
+  综上所述，直接在云服务器部署一个MC服务器反而最舒服，MC如何开服这种问题就不用细说了，各大搜索引擎大量这类内容。我部署了[minecraft forge 1.12.2 - 14.23.5.2855 + Minecraft Server1.12.2版本](Downloads for Minecraft Forge for Minecraft 1.12.2)
+  然后就是导入整合包的模组，再运行发现失败了，查看崩溃日志发现有一个Mod异常，通过检索资料了解到，该mod只需要在客户端安装就行，所以我移除了该Mod，然而继续运行仍然崩溃。
+cp -r /your/pkg/.minecraft/mods /your/path/mods    再仔细查看日志，找到当中建议移除的40多个“可能引起异常”Mod，二话不说直接把提及的Mod都移除了，不过结果并不美满，forge server依旧直接崩溃了。</description>
+    </item>
+    
+  </channel>
+</rss>

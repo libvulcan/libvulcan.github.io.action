@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Libvulcan</title>
+    <link>https://blog.libvulcan.com/tags/</link>
+    <description>Recent content in Tags on Libvulcan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 05 May 2021 15:33:47 +0800</lastBuildDate><atom:link href="https://blog.libvulcan.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>minecraft</title>
+      <link>https://blog.libvulcan.com/tags/minecraft/</link>
+      <pubDate>Wed, 05 May 2021 15:33:47 +0800</pubDate>
+      
+      <guid>https://blog.libvulcan.com/tags/minecraft/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>minecraft forge</title>
+      <link>https://blog.libvulcan.com/tags/minecraft-forge/</link>
+      <pubDate>Wed, 05 May 2021 15:33:47 +0800</pubDate>
+      
+      <guid>https://blog.libvulcan.com/tags/minecraft-forge/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>minecraft java</title>
+      <link>https://blog.libvulcan.com/tags/minecraft-java/</link>
+      <pubDate>Wed, 05 May 2021 15:33:47 +0800</pubDate>
+      
+      <guid>https://blog.libvulcan.com/tags/minecraft-java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>我的世界</title>
+      <link>https://blog.libvulcan.com/tags/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C/</link>
+      <pubDate>Wed, 05 May 2021 15:33:47 +0800</pubDate>
+      
+      <guid>https://blog.libvulcan.com/tags/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
